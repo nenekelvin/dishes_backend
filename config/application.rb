@@ -30,6 +30,8 @@ module Dishes
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.app_generators.scaffold_controller = :scaffold_controller
+
 
     config.load_defaults 5.1
     config.middleware.use Rack::MethodOverride
